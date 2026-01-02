@@ -1,0 +1,216 @@
+
+<html>
+<head>
+<meta charset="utf-8">
+
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; line-height: 1.35; }
+h2 { margin-top: 24px; }
+table { border-collapse: collapse; width: 100%; table-layout: fixed; }
+th, td { border: 1px solid #aaa; padding: 8px; vertical-align: top; word-wrap: break-word; white-space: normal; }
+th { background: #f3f3f3; }
+.caption { margin: 6px 0 12px; color: #444; font-size: 0.95em; }
+.small { font-size: 0.92em; }
+</style>
+
+</head>
+<body>
+
+<h2>Table 1. Feature mapping across wells</h2>
+<div class="caption small">Cells list the matched raw column names (line-broken for readability).</div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>F5_NA</th>
+      <th>F1_NA</th>
+      <th>F7_Statoil</th>
+      <th>F9A_NA</th>
+      <th>F15C_Statoil</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>torque</th>
+      <td>Average Surface Torque kN.m</td>
+      <td>Average Surface Torque kN.m</td>
+      <td>Average Surface Torque kN.m<br>Maximum Surface Torque</td>
+      <td>Torque loss kN.m<br>Average Surface Torque kN.m</td>
+      <td>Surface Torque Average N.m<br>Torque In Amps A<br>Surface Torque Average N.m.1<br>Torque In Amps A.1<br>Torque In Amps A.2<br>Torque In Amps A.3<br>Surface Torque Average N.m.2</td>
+    </tr>
+    <tr>
+      <th>hookload</th>
+      <td>Average Hookload kkgf</td>
+      <td>Average Hookload kkgf</td>
+      <td>Average Hookload kkgf<br>Maximum Hookload</td>
+      <td>Total Hookload kkgf<br>Average Hookload kkgf<br>Hookload (min) kkgf<br>Corrected Hookload kkgf<br>Maximum Hookload kkgf<br>Hook Height m<br>Weight On Hook kkgf<br>Corrected Total Hookload kkgf</td>
+      <td>Hookload N<br>Hookload N.1<br>Hookload N.2</td>
+    </tr>
+    <tr>
+      <th>rpm</th>
+      <td>Average Rotary Speed rpm<br>Bit RPM rpm</td>
+      <td>MWD Turbine RPM <br>Average Rotary Speed rpm</td>
+      <td>Average Rotary Speed rpm<br>NRPM_RT <br>MWD Stick-Slip PKtoPK RPM <br>MWD Turbine RPM <br>MWD Collar RPM</td>
+      <td>RPM30s rpm<br>Averaged RPM rpm<br>Average Rotary Speed rpm<br>TRPM/SPM unitless<br>FLOW-TRPM L/min<br>Total Downhole RPM rpm<br>MWD Turbine RPM rpm<br>DTOR*RPM unitless<br>DRPM30s rpm<br>MWD Collar RPM rpm<br>MWD Stick-Slip PKtoPK RPM rpm</td>
+      <td>Bit RPM - Total RPM c/s<br>Motor RPM c/s<br>Bit RPM - Total RPM c/s.1<br>Surface RPM c/s<br>Bit RPM - Total RPM c/s.2</td>
+    </tr>
+    <tr>
+      <th>spp</th>
+      <td>Average Standpipe Pressure kPa</td>
+      <td>Average Standpipe Pressure kPa</td>
+      <td>Average Standpipe Pressure kPa</td>
+      <td>SPP/SPM2 unitless<br>SPP-VPWD kPa<br>Average Standpipe Pressure kPa<br>SPP5s kPa<br>SPP-APWD kPa<br>SIG_SPP5s kPa</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <th>flow_in</th>
+      <td>Mud Flow In L/min</td>
+      <td>Mud Flow In L/min</td>
+      <td>Mud Flow In L/min</td>
+      <td>Mud Flow In L/min</td>
+      <td>Mud Flow In m3/s<br>Cementing Flow In (measured) m3/s<br>Cementing Flow In (calculated) m3/s</td>
+    </tr>
+    <tr>
+      <th>flow_out</th>
+      <td>Mud Flow Out % %</td>
+      <td>Mud Flow Out % %</td>
+      <td>Mud Flow Out % %<br>Mud Flow Out</td>
+      <td>—</td>
+      <td>Mud Flow Out m3/s<br>Mud Flow Out Percent Euc<br>Mud flow out from Coriolis m3/s<br>Cementing Flow Out (measured) m3/s</td>
+    </tr>
+    <tr>
+      <th>pit_volume</th>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>MudPit Volume Average 5 m3<br>MudPit Volume Average 9 m3<br>MudPit Volume Average 7 m3<br>MudPit Volume Average 12 m3<br>MudPit Volume Average 8 m3<br>MudPit Volume Average 14 m3<br>MudPit Volume Average 6 m3<br>MudPit Volume Average13 m3<br>MudPit Volume Average 10 m3<br>MudPit Volume Average 1 m3<br>MudPit Volume Average 4 m3<br>MudPit Volume Average3 m3<br>MudPit Volume Average 2 m3</td>
+      <td>Pit Volume - Trip Out Group m3<br>Trip Expected Pit Volume m3<br>Pit Volume - Trip In Group m3<br>Total Pit Volume m3<br>Pit Volume Reset Depth m<br>Pit Volume Reset Time unitless</td>
+    </tr>
+    <tr>
+      <th>block_pos</th>
+      <td>Block Position m</td>
+      <td>Block Position m</td>
+      <td>Block Position m</td>
+      <td>Block Position m</td>
+      <td>Block/Topdrive Position Compensated m<br>Block/Topdrive Position Uncompensated 2 m<br>Block/Topdrive Position Uncompensated 3 m<br>Block/Topdrive Position Uncompensated m</td>
+    </tr>
+    <tr>
+      <th>bit_depth</th>
+      <td>Bit Depth (MD) m</td>
+      <td>Bit Depth (TVD) <br>Bit Depth (MD) m</td>
+      <td>Bit Depth <br>Bit Depth (MD) m<br>Bit Depth (TVD)</td>
+      <td>Bit Depth (MD) m<br>Bit Depth m<br>Bit Depth m.1</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <th>hole_depth</th>
+      <td>Hole Depth (TVD) m<br>Hole depth (MD) m</td>
+      <td>Hole depth (MD) m<br>Hole Depth (TVD) m</td>
+      <td>Hole depth (MD) m<br>Hole Depth (TVD) m</td>
+      <td>Hole depth (MD) m</td>
+      <td>The mnemonic of the Hole depth m<br>Hole Depth m</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Table 2. Number of matched columns per feature</h2>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>F5_NA</th>
+      <th>F1_NA</th>
+      <th>F7_Statoil</th>
+      <th>F9A_NA</th>
+      <th>F15C_Statoil</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>torque</th>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>hookload</th>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>8</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>rpm</th>
+      <td>2</td>
+      <td>2</td>
+      <td>5</td>
+      <td>11</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>spp</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>6</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>flow_in</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>flow_out</th>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>pit_volume</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>13</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>block_pos</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>bit_depth</th>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>hole_depth</th>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Interpretation</h2>
+<ul><li><b>Torque:</b> Consistent: F5/F1/F7/F9A use 'Average Surface Torque kN.m'. Outlier: F15C uses 'Surface Torque Average N.m' (different unit/name).</li><li><b>Hookload:</b> Consistent: F5/F1/F7 use 'Average Hookload kkgf'. F9A has many hookload-related channels. Outlier: F15C uses 'Hookload N' variants (different unit).</li><li><b>RPM:</b> Common pattern: many wells include 'Average Rotary Speed rpm'. Outlier: F15C uses c/s fields (e.g., Surface RPM c/s, Bit RPM - Total RPM c/s).</li><li><b>SPP:</b> F5/F1/F7/F9A have standpipe pressure channels; F15C has no SPP match in this scan.</li><li><b>Flow in:</b> F5/F1/F7/F9A: Mud Flow In L/min. Outlier: F15C uses m3/s and includes cementing flow channels.</li><li><b>Flow out:</b> F5/F1/F7 have Mud Flow Out fields; F9A has no match here; F15C has several flow-out fields in m3/s / percent variants.</li><li><b>Pit volume:</b> F5/F1/F7: not found. F9A: many 'MudPit Volume Average ... m3'. F15C: pit volume exists (m3) incl. Total Pit Volume etc.</li><li><b>Block position:</b> F5/F1/F7/F9A: Block Position m. Outlier: F15C uses Block/Topdrive Position variants.</li><li><b>Bit depth:</b> F5/F1/F7/F9A: bit depth fields exist. F15C: no bit depth match in this scan.</li><li><b>Hole depth:</b> All wells have hole depth variants; naming differs slightly. F15C includes 'Hole Depth m' + mnemonic field.</li><li><b>Decision:</b> Drop F15C_Statoil for the current pipeline due to missing SPP/Bit Depth and inconsistent units/naming across multiple core channels.</li></ul>
+
+</body>
+</html>
